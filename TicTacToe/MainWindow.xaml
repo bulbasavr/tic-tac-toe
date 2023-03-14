@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="365"
+        Height="375"
         Width="250"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -14,29 +14,39 @@
         Background="Transparent"
         MouseDown="Window_MouseDown">
 
-
     <Border Background="#322a30"
-            CornerRadius="25">
+            CornerRadius="15">
 
         <Grid>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="55"/>
+                <RowDefinition Height="45"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Button Template="{StaticResource ResourceKey=Button}"
+            <Button Template="{StaticResource ResourceKey=HeaderButton}"
                     Style="{StaticResource CloseButtonStyle}"
+                    Margin="0, 12, 15, 0"
                     Click="CloseButton_Click"
                     HorizontalAlignment="Right">
                 <Label VerticalAlignment="Center"
-                       Width="35"
-                       Height="40"
-                       FontSize="20"
-                       Foreground="Black">x</Label>
+                       Height="30"
+                       FontSize="15"
+                       Foreground="Black">✕</Label>
+            </Button>
+
+            <Button Template="{StaticResource ResourceKey=HeaderButton}"
+                    Style="{StaticResource CloseButtonStyle}"
+                    Margin="0, 12, 58, 0"
+                    HorizontalAlignment="Right">
+                <Label VerticalAlignment="Center"
+                       Height="30"
+                       FontSize="15"
+                       Foreground="Black">_</Label>
             </Button>
 
             <Grid Grid.Row="2">
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="222"/>
@@ -53,31 +63,31 @@
                            Grid.Row="1">
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                     <Button Template="{StaticResource ResourceKey=Button}"
-                            Style="{StaticResource ButtonStyle}"></Button>
+                            Style="{StaticResource ButtonStyle}">_</Button>
 
                 </WrapPanel>
 
@@ -86,12 +96,29 @@
 
                     <Button Template="{StaticResource ResourceKey=Button}" 
                             Style="{StaticResource ResetButtonStyle}"
-                            HorizontalAlignment="Right">Reset</Button>
+                            x:Name="ResetButton"
+                            HorizontalAlignment="Right" Click="ResetButton_Click">Reset</Button>
+
+                    <Grid>
+
+                        <Label x:Name="XLabel"
+                               Foreground="Gray"
+                               Margin="15, 0, 0, 0"
+                               FontSize="20">✕ win: _</Label>
+ 
+                        <Label x:Name="OLabel"
+                               Foreground="Gray"
+                               Margin="118, 0, 0, 0"
+                               FontSize="20">◯ win: _</Label>
+
+                    </Grid>
 
                 </StackPanel>
 
             </Grid>
 
         </Grid>
+
     </Border>
+
 </Window>
