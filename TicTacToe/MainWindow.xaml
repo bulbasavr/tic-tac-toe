@@ -109,12 +109,12 @@
                         <Label x:Name="XLabel"
                                Foreground="Gray"
                                Margin="15, 0, 0, 0"
-                               FontSize="20">✕ win: _</Label>
+                               FontSize="20">✕ win: 0</Label>
  
                         <Label x:Name="OLabel"
                                Foreground="Gray"
                                Margin="118, 0, 0, 0"
-                               FontSize="20">◯ win: _</Label>
+                               FontSize="20">◯ win: 0</Label>
 
                     </Grid>
 
