@@ -38,6 +38,7 @@
             <Button Template="{StaticResource ResourceKey=HeaderButton}"
                     Style="{StaticResource CloseButtonStyle}"
                     Margin="0, 12, 58, 0"
+                    Click="ButtonMinimize_Click"
                     HorizontalAlignment="Right">
                 <Label VerticalAlignment="Center"
                        Height="30"

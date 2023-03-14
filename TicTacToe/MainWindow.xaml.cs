@@ -38,6 +38,11 @@ namespace TicTacToe
             Close();
         }
 
+        private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+
         private void Click_ButtonClick(object sender, RoutedEventArgs e)
         {
             string buttonContent = (string)((Button)e.OriginalSource).Content;
