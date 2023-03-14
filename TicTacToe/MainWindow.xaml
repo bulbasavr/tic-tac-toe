@@ -24,6 +24,10 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <Label Foreground="Gray"
+                   Margin="15, 10, 0, 0"
+                   FontSize="13">Tic-Tac-Toe</Label>
+
             <Button Template="{StaticResource ResourceKey=HeaderButton}"
                     Style="{StaticResource CloseButtonStyle}"
                     Margin="0, 12, 15, 0"
