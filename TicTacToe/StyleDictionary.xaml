@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     
     <Style x:Key="ButtonStyle" TargetType="Button">
-        <Setter Property="Background" Value="#504747"/>
+        <Setter Property="Background" Value="#403a35"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Height" Value="70"/>
         <Setter Property="Foreground" Value="Gray"/>
@@ -10,34 +10,34 @@
         <Setter Property="Margin" Value="2"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#665a5a"/>
+                <Setter Property="Background" Value="#4f463f"/>
             </Trigger>
         </Style.Triggers>
     </Style>
 
     <Style x:Key="CloseButtonStyle" TargetType="Button">
-        <Setter Property="Background" Value="Red"/>
+        <Setter Property="Background" Value="#c66440"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Height" Value="30"/>
         <Setter Property="Width" Value="40"/>
-        <Setter Property="Foreground" Value="Gray"/>
+        <Setter Property="Foreground" Value="#403a35"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#ff4343"/>
+                <Setter Property="Background" Value="#de7d59"/>
             </Trigger>
         </Style.Triggers>
     </Style>
 
     <Style x:Key="ResetButtonStyle" TargetType="Button">
-        <Setter Property="Background" Value="Orange"/>
+        <Setter Property="Background" Value="#ad5750"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Width" Value="144"/>
         <Setter Property="Height" Value="45"/>
         <Setter Property="Margin" Value="2"/>
-        <Setter Property="Foreground" Value="Gray"/>
+        <Setter Property="Foreground" Value="#322c28"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#ffb65f"/>
+                <Setter Property="Background" Value="#c97069"/>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -52,7 +52,7 @@
                     <Label Content="{TemplateBinding Content}"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
-                           FontSize="20"
+                           FontSize="25"
                            Foreground="{TemplateBinding Foreground}"></Label>
                 </Grid>
             </Border>

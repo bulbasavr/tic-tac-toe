@@ -14,8 +14,10 @@
         Background="Transparent"
         MouseDown="Window_MouseDown">
 
-    <Border Background="#322a30"
-            CornerRadius="15">
+    <Border Background="#322c28"
+            CornerRadius="15"
+            BorderThickness="2"
+            BorderBrush="#4f463f">
 
         <Grid>
 
@@ -36,7 +38,7 @@
                 <Label VerticalAlignment="Center"
                        Height="30"
                        FontSize="15"
-                       Foreground="Black">✕</Label>
+                       Foreground="#322c28">✕</Label>
             </Button>
 
             <Button Template="{StaticResource ResourceKey=HeaderButton}"
@@ -47,7 +49,7 @@
                 <Label VerticalAlignment="Center"
                        Height="30"
                        FontSize="15"
-                       Foreground="Black">_</Label>
+                       Foreground="#322c28">_</Label>
             </Button>
 
             <Grid Grid.Row="2">
@@ -103,7 +105,8 @@
                     <Button Template="{StaticResource ResourceKey=Button}" 
                             Style="{StaticResource ResetButtonStyle}"
                             x:Name="ResetButton"
-                            HorizontalAlignment="Right" Click="ResetButton_Click">Reset</Button>
+                            HorizontalAlignment="Right"
+                            Click="ResetButton_Click">Reset</Button>
 
                     <Grid>
 
